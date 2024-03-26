@@ -1,0 +1,31 @@
+<form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm)">
+    
+    <h2>Register</h2>
+    <div>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" ngModel>
+  </div>
+
+    <div>
+      <label for="age">Age:</label>
+    <input type="text" id="age" name="age" ngModel >
+  </div>
+  <div>
+    <label for="email">Email:</label>
+  <input type="email" id="email" name="email" ngModel>
+</div>
+
+    <div>
+      <label for="password">Password:</label>
+    <input type="password" id="password" name="password" ngModel >
+    </div>
+
+    <div>
+      <label for="mobile">Mobile:</label>
+    <input type="text" id="mobile" name="mobile" ngModel >
+  </div>
+
+    <button id="button" type="clickevent">Register</button>
+    <a routerLink="/login">Already have an account? Login here</a>
+  </form>
+  
